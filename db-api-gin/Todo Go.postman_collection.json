@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "325ba5bd-25b5-4ddd-8477-4a198c14fcbd",
+		"name": "Todo Go",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4747/todos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4747",
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Todo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"survey\",\n    \"body\": \"need to complete the survey\",\n    \"completed\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4747/todo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4747",
+					"path": [
+						"todo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Todo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4747/todo/fc27c9b1-fa47-4703-bd5f-36836073e0b9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4747",
+					"path": [
+						"todo",
+						"fc27c9b1-fa47-4703-bd5f-36836073e0b9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Todo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"surveysss\",\n    \"body\": \"need to complete the survey\",\n    \"completed\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4747/todo/fc27c9b1-fa47-4703-bd5f-36836073e0b9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4747",
+					"path": [
+						"todo",
+						"fc27c9b1-fa47-4703-bd5f-36836073e0b9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Todo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4747/todo/fc27c9b1-fa47-4703-bd5f-36836073e0b9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4747",
+					"path": [
+						"todo",
+						"fc27c9b1-fa47-4703-bd5f-36836073e0b9"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
